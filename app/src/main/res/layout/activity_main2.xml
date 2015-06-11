@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Piccolo Set-up"
+            android:textColor="@android:color/black"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/imagesLayout"
+        android:layout_marginTop="30dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image1"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image2"
+            android:src="@mipmap/ic_launcher"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image3"
+            android:src="@mipmap/ic_launcher"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image4"
+            android:src="@mipmap/ic_launcher"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/imagesLayout"
+        android:id="@+id/text_layout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/operatorID"
+            android:text="Enter Operator ID"
+            android:textColor="@android:color/black"
+            />
+
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:id="@+id/operatorIDEditBox"
+            android:hint="Enter Operator ID"
+            android:background="@drawable/rectangular_textedit"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/patientID"
+            android:text="Enter Patient ID"
+            android:textColor="@android:color/black"
+            android:paddingTop="20dp"
+            />
+
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:id="@+id/patientIDEditBox"
+            android:hint="Enter Patient ID"
+            android:background="@drawable/rectangular_textedit"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/piccoloID"
+            android:text="Enter Piccolo ID"
+            android:textColor="@android:color/black"
+            android:paddingTop="20dp"
+            />
+
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:id="@+id/piccoloIDEditBox"
+            android:hint="Enter Piccolo ID"
+            android:background="@drawable/rectangular_textedit"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DOB"
+            android:text="Enter Date of Birth"
+            android:textColor="@android:color/black"
+            android:paddingTop="20dp"
+            />
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/text_layout1"
+            >
+
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:id="@+id/DOBEditBox"
+                android:hint="00/00/0000"
+                android:background="@drawable/rectangular_textedit"
+                />
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/text_layout"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+
+        >
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/Close"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="Close"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Begin Analysis"
+            android:id="@+id/Begin_Analysis"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/Close"
+
+            />
+        
+        </RelativeLayout>
+
+</RelativeLayout>

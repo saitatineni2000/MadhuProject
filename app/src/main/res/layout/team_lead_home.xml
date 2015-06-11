@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/team_lead_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEAM LEAD HOME"
+            android:layout_marginTop="20dp"
+            style="@style/FontSizeLarge"
+            android:textColor="@android:color/black"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clinic Information"
+            android:layout_marginTop="20dp"
+            style="@style/FontSizeMedium"
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/customer_information"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/team_lead_header"
+        android:background="@drawable/rectangular_textedit"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        >
+
+        <TextView
+            android:id="@+id/customer_name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Customer Name:"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:layout_toRightOf="@+id/customer_name"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Contact:"
+            android:layout_toRightOf="@+id/address"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Phone Number:"
+            android:layout_toRightOf="@+id/contact"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/clinic_type"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Clinic Type:"
+            android:layout_toRightOf="@+id/phone_number"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/customer_name_data"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Stand Up Clinic 22 - Madison"
+            android:layout_below="@+id/customer_name"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/address_data"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="324 Main Street, Madison WA 32456"
+            android:layout_below="@+id/customer_name"
+            android:layout_toRightOf="@+id/customer_name_data"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/contact_data"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Mary Jane Gray"
+            android:layout_below="@+id/customer_name"
+            android:layout_toRightOf="@+id/address_data"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/phone_number_data"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="315-767-0987"
+            android:layout_below="@+id/customer_name"
+            android:layout_toRightOf="@+id/contact_data"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/clinic_type_data"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Stand-Alone"
+            android:layout_below="@+id/customer_name"
+            android:layout_toRightOf="@+id/phone_number_data"
+            android:layout_marginTop="5dp"
+            />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/imagesLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/customer_information"
+        >
+
+        <ImageView
+            android:id="@+id/team_lead_image1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginRight="100dp"
+            />
+
+        <ImageView
+            android:id="@+id/team_lead_image2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_toRightOf="@+id/team_lead_image1"
+            android:layout_marginRight="100dp"
+            />
+
+        <ImageView
+            android:id="@+id/team_lead_image3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_toRightOf="@+id/team_lead_image2"
+            />
+        
+        <TextView
+            android:id="@+id/team_lead_image1_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Clinic Schedule"
+            android:gravity="center"
+            style="@style/FontSizeLarge"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/team_lead_image1"
+            android:layout_marginRight="100dp"/>
+
+        <TextView
+            android:id="@+id/team_lead_image2_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Clinic Info"
+            style="@style/FontSizeLarge"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_below="@+id/team_lead_image1"
+            android:layout_toRightOf="@+id/team_lead_image1_text"
+            android:layout_marginRight="100dp"/>
+
+        <TextView
+            android:id="@+id/team_lead_image3_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Daily Stats"
+            style="@style/FontSizeLarge"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_below="@+id/team_lead_image1"
+            android:layout_toRightOf="@+id/team_lead_image2_text"
+            />
+
+        <ImageView
+            android:id="@+id/team_lead_image4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginRight="100dp"
+            android:layout_below="@+id/team_lead_image1_text"
+            android:layout_marginTop="50dp"
+            />
+
+        <ImageView
+            android:id="@+id/team_lead_image5"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_toRightOf="@+id/team_lead_image4"
+            android:layout_marginRight="100dp"
+            android:layout_below="@+id/team_lead_image1_text"
+            android:layout_marginTop="50dp"
+            />
+
+        <TextView
+            android:id="@+id/team_lead_image4_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Staff"
+            android:gravity="center"
+            style="@style/FontSizeLarge"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/team_lead_image4"
+            android:layout_marginRight="100dp"/>
+
+        <TextView
+            android:id="@+id/team_lead_image5_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Close Out"
+            style="@style/FontSizeLarge"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_below="@+id/team_lead_image4"
+            android:layout_toRightOf="@+id/team_lead_image4_text"
+            android:layout_marginRight="100dp"/>
+
+        </RelativeLayout>
+
+</RelativeLayout>
